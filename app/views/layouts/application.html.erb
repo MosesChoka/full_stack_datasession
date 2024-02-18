@@ -12,9 +12,11 @@
   </head>
 
   <body>
+    <%= render 'layouts/header' %>
     <main class="container mx-auto mt-28 px-5 flex">
       <%= javascript_include_tag("main.js") %>
       <%= yield %>
+      <%= render 'layouts/footer' %>
     </main>
   </body>
 </html>
