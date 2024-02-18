@@ -1,0 +1,192 @@
+
+    <header>
+    <div class="container">
+        <nav>
+            <!-- <a href="#" ><img src="images/my_logo.png" alt="DataSessions" class="logo"></a> -->
+            <ul class="sidebar">
+                <li onclick=hideSidebar><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                
+                <li><%= link_to "Home", "#" %></li>
+                <li><%= link_to "About", "#" %></li>
+                <li><%= link_to "Learn", "#" %></li>
+                <li><%= link_to "Jobs", "#" %></li>
+                <li><%= link_to "Contact", "#" %></li>
+            </ul>
+
+            <ul class="nav-links ">
+                <%= link_to image_tag("my_logo.png", alt:"DataSessions", id:"logo") %>
+                <li class="hideOnMobile"><%= link_to "Home", "#" %></li>
+                <li class="hideOnMobile"><%= link_to "About", "#" %></li>
+                <li class="hideOnMobile"><%= link_to "Learn", "#" %></li>
+                <li class="hideOnMobile"><%= link_to "Jobs", "#"  %></li>
+                <li class="hideOnMobile"><%= link_to "Contact", "#" %></li>
+                <li class=" menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </div>  
+    </header>
+    <section>
+
+        <div class="hero-section">
+            <!-- Show on mobile device -->
+            <div class="hero-text2">
+                <p class="big-intro">
+                    Fuel Your Future With 
+                    <span>Data Mastery</span>. Join Our Sessions Today!
+                </p>
+        
+                <p class="small-intro">
+                    Stay Ahead With Cutting-Edge Data Tools <br>
+                    Connect, Learn, and Grow With Us.
+                </p>
+                <%= link_to "Sign Up", signup_path, class:"sign-btn" %>
+            </div>
+
+
+            <!-- Show on desktop device -->
+            <div class="hero-text">
+                <p class="big-intro">
+                    Fuel Your Future With <br>
+                    <span>Data Mastery</span>. Join Our <br> Sessions Today!
+                </p>
+        
+                <p class="small-intro">
+                    Stay Ahead With Cutting-Edge Data Tools <br>
+                    Connect, Learn, and Grow With Us.
+                </p>
+                <%= link_to "Sign Up", signup_path,  class:"sign-btn" %>
+            </div>
+
+            <!-- Hero Image -->
+            
+            <div class="hero-image">
+                <%= image_tag("hero-img.png", alt:"DataSessions") %>
+            </div>
+
+            <!-- Button to show on mobile device -->
+            
+            <%= link_to "Sign Up", signup_path, class:"sign-btn2" %>
+            
+            
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses_tools">
+
+        <!-- Heading -->
+        <div class="l-title">
+            <center id="Learn"><h1>What you will learn</h1></center>
+        </div> 
+       
+        <!-- content -->
+        <div id="courses">
+
+            <div class="tool2">
+                <%= image_tag("Excel.jpg",alt:"") %>
+                <h2>Spreasheets</h2>
+                <p>Lorem ipsum dolor sit amet consectetur olores</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipi</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+                <button>Learn more!</button>
+            </div>
+
+
+            <div class="tool2">
+                <%= image_tag("R_Studio.jpg", alt:"") %>
+                <h2>R</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisi</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisi</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisi</p>
+                <button>Learn more!</button>
+            </div>
+            
+            <div class="tool2">
+                <%= image_tag("pyt.jpg",alt:"") %>
+                <h2>Python</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisi</p>
+                <button>Learn more!</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about">
+
+        <!-- Heading -->
+        <center id="abt"><h1>About DataSessions</h1></center>
+
+        <!-- Content -->
+        <div class="about_us">
+
+            <p>
+                At DataSession, we're dedicated to fostering a vibrant community where individuals at every stage of their data journey can thrive. 
+                Whether you're a newcomer eager to break into the field or an experienced professional seeking to expand your network, we're here to support you.
+            </p> <br>
+
+            <p>
+                Our mission is simple: to provide a platform for knowledge sharing, networking, and collaboration within the data community. 
+                From curated resources and networking opportunities to career support and project collaboration, we offer everything you need to succeed in the dynamic world of data.
+            </p> <br>
+
+            <p>
+                Join us today and embark on a journey of continuous learning, connection, and growth. Together, let's unlock the full potential of data and drive meaningful impact in the world. 
+                Welcome to DataSession!
+            </p><br>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-content1">
+                <h3>Quick links</h3>
+                <ul class="list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">Jobs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-content2">
+                <h3>SUBSCRIBE</h3>
+                <%= form_with(model: @user) do |f|%>
+                  <%= f.text_field :email, placeholder:"Your email address", class:"form-input"%> <br>
+                  <%= f.submit "Sign up now", class:"form-button" %>
+                <% end %>
+            </div>
+
+            <div class="footer-content3">
+                <h3>Contact Us</h3>
+                <p>Phone: 0745138420</p>
+                <p>Address: 43498, Mombasa</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+           
+            <div class="footer-content4">
+                <p>&copy; 2024 DataSessions. All rights reserved.</p>
+            </div>
+         
+
+            <!-- <div class="footer-content">
+                <h3>Follow Us</h3>
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+            </div> -->
+        </div>
+       
+        
+    </footer>
+    <script src="https://kit.fontawesome.com/32f6e7a6d8.js" crossorigin="anonymous"></script>

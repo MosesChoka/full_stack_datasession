@@ -1,0 +1,470 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200&family=Mukta:wght@200&family=Poppins:wght@600&display=swap');
+html {
+	margin: 0px;
+	padding: 0px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body { 
+    min-height: 100vh;
+    /* background-color: bisque; */
+}
+
+
+nav {
+    /* padding-top: 20px; */
+    position: fixed;
+    background-color: rgba(197, 207, 207, 0.7);
+    width: 100%;
+    height: auto;
+   
+}
+
+nav ul {
+    width: 100%;
+    list-style: none ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+
+.nav-links a:hover{
+    background-color: rgb(28, 95, 95);
+}
+.nav-links {
+    font-family: 'Poppins', sans-serif;
+}
+/*nav li:first-child {
+    margin-right: auto;
+}*/
+
+#logo{
+    justify-content: flex-start;
+    position: fixed;
+    padding-top: 20px;
+    height: auto;
+    left: 0px;
+    width: 135px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.hero-section {
+    height: 80vh;
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    color: rgb(235, 55, 55);
+}
+
+.hero-text {
+    /* font-family: 'Courier New', Courier, monospace; */
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-left: 12em;
+    padding-top: 7%;
+}
+
+.big-intro {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.small-intro {
+    font-family: 'Mukta', sans-serif;
+    font-size: 24px;
+    padding-top: 5%;
+}
+
+.sign-btn {
+    background-color: rgb(28, 95, 95);
+    border: none;
+    color: white;
+    margin-top: 15px;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sign-btn:hover {
+    background-color: rgb(210, 130, 31);
+}
+.hero-image {
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    padding-top: 100px;
+    margin-left: 15em;
+}
+#courses_tools {
+    background-color: aliceblue;
+    height: 80vh;
+    /* margin-top: 20px; */
+}
+#Learn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    /* display: flex;
+    justify-content: center; */
+    margin: 0 0 20px 0;
+}
+
+
+#courses {
+    /* background-color: aliceblue; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+
+}
+
+#about {
+    /* background-image: url(images/community_image.webp); */
+    height: 60vh;
+    margin-bottom: 50px;
+    
+}
+
+#abt {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    
+}
+
+.about_us {
+    margin-left: 12em;
+    margin-right: 12em;
+    /* display: flex;
+    justify-content: space-between; */
+    line-height: 1.5;
+}
+
+.tool2 img {
+    width: 200px;
+    height: auto;
+}
+
+
+.footer-container {
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container div {
+    text-align: center;
+    
+}
+
+.footer-container div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px ;
+}
+.footer-content1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.footer-content2 .form-input {
+	background-color: #efefef;
+    	width: 400px;
+   	height: 45px;
+    	border-radius: 4px;
+    	text-align: center;
+    	margin: 20px 40px;
+    	outline: none;
+    	border: none;
+}
+
+.footer-content2 .form-button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+
+
+/* .footer-content3 {
+    flex-wrap: wrap;
+    align-items: center;
+} */
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons i {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+.list {
+    padding: 0;
+}
+
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+
+
+.menu-button {
+    display: none;
+}
+
+.hero-text2 {
+    display: none;
+}
+
+.sign-btn2 {
+    display: none;
+}
+
+
+@media (max-width: 1540px){
+    .hideOnMobile {
+        display: none
+    }
+    .menu-button {
+        display: block;
+    }
+    .hero-section{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: bisque;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        /* margin-top: 20px; */
+        height: 100vh;;
+    }
+
+    .hero-text2 {
+        padding-top: 8px;
+        display: block;
+        margin-top: 40px;
+        margin-left: 2em;
+        letter-spacing: 1.5px;
+        line-height: 1.5;
+        
+    }
+
+    .hero-text {
+        display: none;
+    }
+
+    .big-intro {
+        font-family: 'Poppins', sans-serif;
+        font-size: 27.5px;
+        font-weight: bold;
+        line-height: 2;
+    }
+    
+    .small-intro {
+        font-family: 'Mukta', sans-serif;
+        font-size: 12px;
+        padding-top: 5%;
+        line-height: 2;
+    }
+
+    .hero-image img {
+        width: 400px;
+        height: 350px;
+        
+    }
+    .hero-image {
+        width: 100%;
+        height: auto;
+        margin-left: 1em;
+        justify-content: center;
+
+    }
+    .sign-btn {
+        display: none;
+        
+    }
+
+    
+
+    .sign-btn2 {
+        display: flex;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        border-radius: 10px;
+        background-color: rgb(235, 55, 55);
+        border: none;
+        color: white;
+        margin-left: 9em;
+        padding: 15px 40px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+
+    
+    #courses_tools {
+        height: 150vh;
+        /* margin-top: 20px; */
+    }
+    
+    #Learn {
+        /* display: flex; */
+        font-size: 20px;
+    }
+    
+    .tool2 {
+        margin-bottom: 80px;
+    }
+
+    #about {
+        height: 60vh;
+        /* margin-bottom: 10px; */
+        
+    }
+
+    #abt {
+        
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about_us {
+        margin-left: 2em;
+        margin-right: 2em;
+        /* margin-bottom: 5em; */
+    }
+
+    .footer-container {
+        justify-content: center;
+       flex-wrap: wrap;
+    }
+    .footer-content2 h3 {
+        
+        font-size: 15px;
+    }
+    .footer-content2 .form-input {
+        width: 200px;
+        height: 40px;
+        border-radius: 4px;
+        text-align: center;
+        /* margin: 5px 4px; */
+        justify-content: center;
+        outline: none;
+        border: none;
+    }
+
+    .footer-content2 .form-button {
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        border-radius: 15px;
+        padding: 5px 15px;
+        font-size: 10px;
+        cursor: pointer;
+    
+    }
+
+    .footer-content3 {
+        margin-top: 30px;
+    }
+
+    .footer-content3 h3 {
+        
+        font-size: 15px;
+    }
+
+    .footer-content1 h3 {
+        font-weight: bolder;
+        font-size: 20px;
+    }
+}
+
+
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
