@@ -1,3 +1,33 @@
+<section class="user-signup-page">
+
 <div>
-  <h1 class="font-bold text-4xl">Sign Up</h1>
+  <br>
+  <br>
+  <br>
+  <h3>Sign Up</h3>
 </div>
+
+<div class="signup-form">
+  <%= form_with(model: @user) do |f| %>
+    <%#= f.label :name %>
+    <%= f.text_field :name, placeholder:"Enter name" %>
+    <br>
+    <br>
+    <%#= f.label :email %>
+    <%= f.text_field :email, placeholder:"email@example.com" %>
+    <br>
+    <br>
+    <%#= f.label :password %>
+    <%= f.text_field :password, placeholder:"enter password" %>
+    <br>
+    <br>
+    <%#= f.label :password %>
+    <%= f.text_field :password, placeholder:"confirm password" %>
+    <br>
+    <br>
+    <%= f.submit "Sign up" %>
+
+  <% end %>
+</div>
+
+</section>
