@@ -129,6 +129,7 @@ span {
     font-family: 'Mukta', sans-serif;
     font-size: 24px;
     padding-top: 5%;
+    margin-bottom: 20px;
 }
 
 .sign-btn {
@@ -203,7 +204,22 @@ span {
     height: auto;
 }
 
+.about-us-content {
+	height: 60vh;
+}
 
+.abt-content {
+	line-height: 1.5;
+	margin: 0 50px 0 50px;
+}
+
+.signup-form {
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+	margin-top: 40px;
+}
 .footer-container {
     margin-top: 150px;
     width: 100%;
@@ -470,4 +486,10 @@ h3 {
     .sidebar {
         width: 100%;
     }
+}
+
+@media(max-width: 412px) {
+	.about-us-content {
+		height: 65vh;
+	}
 }
