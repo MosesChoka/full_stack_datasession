@@ -1,6 +1,23 @@
+// system level; installed by rails
+/*@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+@import "bootstrap-sprockets";
+@import "bootstrap";*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200&family=Mukta:wght@200&family=Poppins:wght@600&display=swap');
+
+
+/*$gray-medium-light: #eaeaea;
+@mixin box_sizing {
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}*/
+
+
+
+
 html {
 	margin: 0px;
 	padding: 0px;
@@ -152,7 +169,7 @@ span {
     justify-content: flex-end;
     float: right;
     padding-top: 100px;
-    margin-left: 15em;
+    margin-left: 5em;
 }
 #courses_tools {
     background-color: aliceblue;
@@ -214,6 +231,15 @@ span {
 	margin: 0 50px 0 50px;
 }
 
+/* forms */
+/*input, textarea, select, .uneditable-input {
+	border: 1px solid #bbb;
+	width: 100 % ;
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: center;
+	@include box_sizing;	
+}*/
 .signup-form {
 	height: 50vh;
 	display: flex;
@@ -221,6 +247,20 @@ span {
 	/*align-items: center;*/
 	margin-top: 40px;
 }
+
+.form-input1 {
+	height: 30px;
+	width: 380px;
+	/*border-radius: 8px;*/
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+}
+
+.form-input1::placeholder {
+	font-weight: bolder;
+}
+
 .footer-container {
     margin-top: 150px;
     width: 100%;

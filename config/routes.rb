@@ -6,8 +6,5 @@ Rails.application.routes.draw do
   get '/learn', to: "pages#learn"
   get '/jobs', to: "pages#jobs"
   get '/contact', to: "pages#contact"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :users
 end
