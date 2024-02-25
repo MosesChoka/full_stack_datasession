@@ -193,7 +193,7 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
-
+    margin-top: 130px;
 }
 
 #about {
@@ -217,9 +217,24 @@ span {
     line-height: 1.5;
 }
 
-.tool2 img {
+.l-title {
+	margin-bottom: 6px;
+}
+
+.tool2 {
+	border: 0.5px grey;
+       	border-radius: 15px;	
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.tool2 img {		
     width: 200px;
     height: auto;
+}
+
+
+.tool2:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
 
 .about-us-content {
@@ -227,6 +242,7 @@ span {
 }
 
 .abt-content {
+	/*text-align: justify;*/
 	line-height: 1.5;
 	margin: 0 50px 0 50px;
 }
@@ -248,17 +264,58 @@ span {
 	margin-top: 40px;
 }
 
+.signupform-btn {
+	 display: flex;
+        /*justify-content: center;*/
+        /* align-items: center; */
+        border-radius: 3px;
+        background-color: #098087;
+	width: 380px;
+        border: none;
+        color: white;
+        /*margin-left: 3em;*/
+        padding: 15px 40px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+}
+
 .form-input1 {
 	height: 30px;
 	width: 380px;
-	/*border-radius: 8px;*/
+	border-radius: 3px;
 	border: 1px solid black;
 	display: flex;
 	align-items: center;
 }
 
+.form-input1:focus {
+	border-color: #d6dddd;
+}
+
+.form-input1:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+
 .form-input1::placeholder {
-	font-weight: bolder;
+	text-align: center;
+	font-weight: lighter;
+}
+
+#error_explanation {
+	color: red;
+	ul {
+		color: red;
+		margin: 0 0 60px 80px;
+	}
+}
+
+.field_with_errors {
+	@extend .has-errors;
+	.form-input1 {
+		color: $state-danger-text;
+	}
 }
 
 .footer-container {
@@ -444,8 +501,12 @@ h3 {
 
     
     #courses_tools {
-        height: 150vh;
+        height: 200vh;
         /* margin-top: 20px; */
+    }
+
+    #courses {
+	    margin-top: 50px;
     }
     
     #Learn {
