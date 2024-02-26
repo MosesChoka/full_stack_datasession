@@ -221,6 +221,10 @@ span {
     line-height: 1.5;
 }
 
+.abt-content {
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+}
 .l-title {
 	margin-bottom: 6px;
 }
