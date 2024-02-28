@@ -172,16 +172,16 @@ span {
     margin-left: 5em;
 }
 #courses_tools {
-    background-color: aliceblue;
-    height: 120vh;
+    background-color: #ffff;
+    height: 80vh;
     /* margin-top: 20px; */
 }
 #Learn {
     font-family: 'Poppins', sans-serif;
-    font-size: 28px;
+    font-size: 20px;
     /* display: flex;
     justify-content: center; */
-    margin: 0 0 10px 0;
+    margin: 15px 0 10px 0;
 }
 
 
@@ -198,9 +198,10 @@ span {
 }
 
 #about {
-    /* background-image: url(images/community_image.webp); */
+    background-color: aliceblue;
+    background-image: url(<%= asset_path 'close_FILL0_wght400_GRAD0_opsz24.svg' %>);
     height: 60vh;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
     
 }
 
@@ -232,7 +233,7 @@ span {
 .tool2 {
 	background-color: rgba(255, 228, 196, 0.1);
 	inline-size: 350px;
-	/*width: calc(100%/3);*/
+	width: 550px;
 	overflow: hidden;
 	border: 0.5px grey;
        	border-radius: 15px;	
@@ -331,7 +332,7 @@ span {
 }
 
 .footer-container {
-    margin-top: 150px;
+    /*margin-top: 150px;*/
     width: 100%;
     padding: 100px 15%;
     background: #333;
@@ -512,8 +513,8 @@ h3 {
 
 
     
-    #courses_tools {
-        height: 200vh;
+    #courses_tools {    
+        height: 180vh;
         /* margin-top: 20px; */
     }
 
@@ -523,17 +524,31 @@ h3 {
     
     #Learn {
         /* display: flex; */
-        font-size: 20px;
+        font-size: 10px;
     }
     
     .tool2 {
+	width: 300px;
         margin-bottom: 80px;
     }
 
+    .tool2 img {
+	    width: 100px;
+    }
+
     #about {
-        height: 60vh;
+        height: 50vh;
         /* margin-bottom: 10px; */
         
+    }
+
+    .tool2 h2 {
+	    font-size: 8px;
+    }
+
+    .tool2 {
+	    font-size: 8px;
+	    line-height: 1.5;
     }
 
     #abt {
