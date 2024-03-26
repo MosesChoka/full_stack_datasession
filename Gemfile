@@ -21,6 +21,8 @@ gem "tailwindcss-rails"
 
 gem "jbuilder"
 
+gem "rdoc", ">= 6.6.3.1"
+
 # gem "redis", "~> 4.0"
 
 # gem "kredis"
