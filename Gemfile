@@ -5,9 +5,9 @@ ruby "3.1.2"
 
 gem "rails", "~> 7.0.8"
 
-gem "sprockets-rails"
+gem 'pg', '~> 1.5', '>= 1.5.6'
 
-gem "sqlite3", "~> 1.4"
+gem "sprockets-rails"
 
 gem "puma", "~> 5.0"
 
@@ -54,10 +54,6 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end 
-
-group :production do
-  gem "pg", '~>1.5'
-end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
