@@ -15,9 +15,14 @@ gem "importmap-rails"
 
 gem "turbo-rails"
 
+gem "cssbundling-rails"
+
+#gem "bootstrap"
+#gem "jquery-rails"
+
 gem "stimulus-rails"
 
-gem "tailwindcss-rails"
+#gem "tailwindcss-rails"
 
 gem "jbuilder"
 
@@ -61,5 +66,3 @@ group :test do
   gem "selenium-webdriver"
 
 end
-
-
