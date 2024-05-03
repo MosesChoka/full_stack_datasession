@@ -1,8 +1,9 @@
 // system level; installed by rails
-/*@import 'bootstrap/scss/bootstrap';
-@import 'bootstrap-icons/font/bootstrap-icons';
+
+/*
 @import "bootstrap-sprockets";
-@import "bootstrap";*/
+@import "bootstrap";
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200&family=Mukta:wght@200&family=Poppins:wght@600&display=swap');
