@@ -200,7 +200,7 @@ span {
 
 #about {
     background-color: aliceblue;
-    background-image: url(<%= asset_path 'close_FILL0_wght400_GRAD0_opsz24.svg' %>);
+    /*background-image: url(<%= asset_path 'close_FILL0_wght400_GRAD0_opsz24.svg' %>)*/;
     height: 60vh;
     /*margin-bottom: 50px;*/
     
