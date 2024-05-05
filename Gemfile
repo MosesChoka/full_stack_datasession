@@ -15,15 +15,13 @@ gem "importmap-rails"
 
 gem "turbo-rails"
 
-gem "cssbundling-rails"
-
 #gem 'bootstrap', '~>5.2', '>= 5.2.3'
 #gem "bootstrap"
 #gem "jquery-rails"
 
 gem "stimulus-rails"
 
-#gem "tailwindcss-rails"
+gem "tailwindcss-rails"
 
 gem "jbuilder"
 
