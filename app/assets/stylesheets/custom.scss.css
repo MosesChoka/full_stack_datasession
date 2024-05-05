@@ -325,6 +325,8 @@ span {
 	}
 }
 
+$state-danger-text: #ff0000;
+
 .field_with_errors {
 	@extend .has-errors;
 	.form-input1 {
