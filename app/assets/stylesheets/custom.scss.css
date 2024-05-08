@@ -282,7 +282,7 @@ span {
 	 display: flex;
         /*justify-content: center;*/
         /* align-items: center; */
-        border-radius: 3px;
+        border-radius: 10px;
         background-color: #098087;
 	width: 380px;
         border: none;
@@ -591,6 +591,10 @@ h3 {
         justify-content: center;
         outline: none;
         border: none;
+    }
+
+    .user-signup-page {
+	    margin-bottom: 50px;
     }
 
     .footer-content2 .form-button {
