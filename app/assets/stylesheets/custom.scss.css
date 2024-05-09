@@ -625,6 +625,13 @@ h3 {
 }
 
 @media(max-width: 1536) {
+    .hideOnMobile {
+        display: none
+    }
+    .menu-button {
+        display: block;
+    }
+
 	#courses-tools {
 		height: 100vh;
 	}
