@@ -624,21 +624,7 @@ h3 {
     }
 }
 
-@media(max-width: 1500) {
-    .hideOnMobile {
-        display: none
-    }
-    .menu-button {
-        display: block;
-    }
-
-	#courses-tools {
-		height: 80vh;
-	}
-
-	.tool-2 {
-		width: 400px;
-	}
+@media(max-width: 1536) {
 }
 
 @media(max-width: 400px) {
