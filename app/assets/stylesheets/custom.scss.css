@@ -624,7 +624,7 @@ h3 {
     }
 }
 
-@media(max-width: 1536) {
+@media(max-width: 1500) {
     .hideOnMobile {
         display: none
     }
@@ -633,11 +633,10 @@ h3 {
     }
 
 	#courses-tools {
-		height: 100vh;
+		height: 80vh;
 	}
 
 	.tool-2 {
-		inline-size: 350px;
 		width: 400px;
 	}
 }
