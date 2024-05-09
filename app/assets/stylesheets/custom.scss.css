@@ -439,7 +439,7 @@ h3 {
 }
 
 
-@media (max-width: 1520px){
+@media (max-width: 1540px){
     .hideOnMobile {
         display: none
     }
@@ -528,8 +528,6 @@ h3 {
     #courses {
 	    margin-top: 50px;
 	    display: flex;
-	    flex-wrap: wrap;
-	    justify-content: space-around; 
     }
     
     #Learn {
@@ -626,7 +624,16 @@ h3 {
     }
 }
 
+@media(max-width: 1536) {
+	#courses-tools {
+		height: 100vh;
+	}
 
+	.tool-2 {
+		inline-size: 350px;
+		width: 400px;
+	}
+}
 
 @media(max-width: 400px) {
     .sidebar {
@@ -639,3 +646,4 @@ h3 {
 		height: 65vh;
 	}
 }
+
