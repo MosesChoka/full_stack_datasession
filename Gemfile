@@ -65,3 +65,5 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+gem 'rack-cors'
