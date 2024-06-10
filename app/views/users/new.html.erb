@@ -1,39 +1,32 @@
 <% provide(:title, "Signup") %>
-<section class="user-signup-page">
-
-<div class="font-bold">
-  <br>
-  <br>
-  <br>
-  <h3 class="font-bold">Sign Up</h3>
-</div>
-
-<div class="signup-form">
-  <div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_with(model: @user) do |f| %>
-      <%= render 'shared/error_messages' %>
-
-      <%= f.label :name %>
-      <%= f.text_field :name, placeholder:"Enter name", class:"form-input1" %>
-      <br>
-      <br>
-      <%= f.label :email %>
-      <%= f.email_field :email, placeholder:"email@example.com", class:"form-input1"%>
-      <br>
-      <br>
-      <%= f.label :password %>
-      <%= f.password_field :password, placeholder:"enter password", class:"form-input1" %>
-      <br>
-      <br>
-      <%= f.label :password, "Password Confirmation" %>
-      <%= f.password_field :password, placeholder:"confirm password", class:"form-input1" %>
-      <br>
-      <br> 
-      <%= f.submit "Sign up", class:"signupform-btn" %>
-    <% end %>
+<section class="user-signup-page flex justify-center items-center min-h-screen bg-gray-100">
+  <div class="w-full max-w-xs">
+    <div class="font-bold text-center mb-4">
+      <h3 class="font-bold text-2xl">Sign Up</h3>
+    </div>
+    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <%= form_with(model: @user) do |f| %>
+        <%= render 'shared/error_messages' %>
+        <div class="mb-4">
+          <%= f.label :name, class: "block text-gray-700 text-sm font-bold mb-2" %>
+          <%= f.text_field :name, placeholder: "Enter name", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+          <div class="mb-4">
+            <%= f.label :email, class: "block text-gray-700 text-sm font-bold mb-2" %>
+            <%= f.email_field :email, placeholder: "email@example.com", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+          </div>
+          <div class="mb-4">
+            <%= f.label :password, class: "block text-gray-700 text-sm font-bold mb-2" %>
+            <%= f.password_field :password, placeholder: "enter password", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+          </div>
+          <div class="mb-4">
+            <%= f.label :password_confirmation, "Password Confirmation", class: "block text-gray-700 text-sm font-bold mb-2" %>
+            <%= f.password_field :password_confirmation, placeholder: "confirm password", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+          </div>
+          <div class="flex items-center justify-between">
+            <%= f.submit "Sign up", class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
-  </div>
-</div>
-
 </section>
