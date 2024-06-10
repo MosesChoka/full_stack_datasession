@@ -1,154 +1,146 @@
-
-  <section>
-
-        <div class="hero-section">
-            <!-- Show on mobile device -->
-            <div class="hero-text2">
-                <p class="big-intro">
-                    Fuel Your Future With 
-                    <span>Data Mastery</span>. Join Our Sessions Today!
-                </p>
-        
-                <p class="small-intro">
-                    Stay Ahead With Cutting-Edge Data Tools <br>
-                    Connect, Learn, and Grow With Us.
-                </p>
-                <%= link_to "Sign Up", signup_path, class:"sign-btn" %>
-            </div>
-
-
-            <!-- Show on desktop device -->
-            <div class="hero-text">
-                <p class="big-intro">
-                    Fuel Your Future With <br>
-                    <span>Data Mastery</span>. Join Our <br> Sessions Today!
-                </p>
-        
-                <p class="small-intro">
-                    Stay Ahead With Cutting-Edge Data Tools <br>
-                    Connect, Learn, and Grow With Us.
-                </p>
-                <%= link_to "Sign Up", signup_path,  class:"sign-btn" %>
-            </div>
-
-            <!-- Hero Image -->
-            
-            <div class="hero-image">
-                <%= image_tag("hero-img.png", alt:"DataSessions") %>
-            </div>
-
-            <!-- Button to show on mobile device -->
-            
-            <%= link_to "Sign Up", signup_path, class:"sign-btn2" %>
-            
-            
-        </div>
-    </section>
-
-    <!-- Courses Section -->
-    <section id="courses_tools">
-
-        <!-- Heading -->
-        <div class="l-title">
-            <center id="Learn"><h1 class="font-bold">What you will learn</h1></center>
-        </div> 
-       
-        <!-- content -->
-        <div id="courses">
-          
-            <div class="tool2">
-                <%= image_tag("Sql_data_base_with_logo.webp",alt:"") %>
-                <h2>SQL</h2>
-                <p>SQL (Structured Query Language) is the cornerstone of data management and analysis, empowering individuals and businesses to extract valuable insights from vast datasets.</p>
-                <p>On our community website, we delve into the depths of SQL, offering resources, tutorials, and discussions to help you master this essential tool.</p>
-                <!--
-                <p>Lorem ipsum dolor sit amet consectetur olores</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipi</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipis</p><br> -->
-                <button>Learn more!</button>
-            </div>
-
-
-            <div class="tool2">
-                <%= image_tag("python-logo-vector-1.svg", alt:"") %>
-                <h2>Python</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisi</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisi</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisi</p><br>
-                <button>Learn more!</button>
-            </div>
-            
-            <div class="tool2">
-                <%= image_tag("r1.png",alt:"") %>
-                <h2>R</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisi</p><br>
-                <button>Learn more!</button>
-            </div>
-        </div>
-
-         <div id="courses">
-
-            <div class="tool2">
-                <%= image_tag("excel1.png",alt:"") %>
-                <h2>Excel</h2>
-                <p>Lorem ipsum dolor sit amet consectetur olores</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipi</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipis</p><br>
-                <button>Learn more!</button>
-            </div>
-
-
-            <div class="tool2">
-                <%= image_tag("tableau1.png", alt:"") %>
-                <h2>Tableau</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisi</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisi</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisi</p><br>
-                <button>Learn more!</button>
-            </div>
-
-            <div class="tool2">
-                <%= image_tag("powerbi-jpg.webp",alt:"") %>
-                <h2>Power BI</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisi</p><br>
-                <button>Learn more!</button>
-            </div>
-         </div>
-    </section>
-
-    <!-- ABOUT US SECTION -->
-    <section id="about">
-
-        <!-- Heading -->
-        <div class="l-title">
-          <br>
-          <center id="abt"><h1 class="font-bold">About DataSessions</h1></center>
-        </div>
-
-        <!-- Content -->
-        <div class="about_us">
-
-            <p>
-                At DataSession, we're dedicated to fostering a vibrant community where individuals at every stage of their data journey can thrive. 
-                Whether you're a newcomer eager to break into the field or an experienced professional seeking to expand your network, we're here to support you.
-            </p> <br>
-
-            <p>
-                Our mission is simple: to provide a platform for knowledge sharing, networking, and collaboration within the data community. 
-                From curated resources and networking opportunities to career support and project collaboration, we offer everything you need to succeed in the dynamic world of data.
-            </p> <br>
-
-            <p>
-                Join us today and embark on a journey of continuous learning, connection, and growth. Together, let's unlock the full potential of data and drive meaningful impact in the world. 
-                Welcome to DataSession!
-            </p><br>
-
-        </div>
-
-    </section>
-
-       <script src="https://kit.fontawesome.com/32f6e7a6d8.js" crossorigin="anonymous"></script>
+<section>
+  <div class="hero-section">
+    <!-- Show on mobile device -->
+    <div class="hero-text2">
+      <p class="big-intro">
+        Fuel Your Future With 
+        <span>Data Mastery</span>. Join Our Sessions Today!
+      </p>
+      <p class="small-intro">
+        Stay Ahead With Cutting-Edge Data Tools <br>
+        Connect, Learn, and Grow With Us.
+      </p>
+      <%= link_to "Sign Up", signup_path, class:"sign-btn" %>
+    </div>
+    <!-- Show on desktop device -->
+    <div class="hero-text">
+      <p class="big-intro">
+        Fuel Your Future With <br>
+        <span>Data Mastery</span>. Join Our <br>
+        Sessions Today!
+      </p>
+      <p class="small-intro">
+        Stay Ahead With Cutting-Edge Data Tools <br>
+        Connect, Learn, and Grow With Us.
+      </p>
+      <button class="bg-custom-btn-bg hover:bg-custom-hover text-white  py-2 px-8 rounded">
+        <%= link_to "Sign Up", signup_path,  class:"btn btn-green-400" %>
+      </button>
+    </div>
+    <!-- Hero Image -->
+    <div class="flex flex-right p-12 mr-16">
+      <%= image_tag("hero-img.png", alt:"DataSessions") %>
+    </div>
+    <!-- Button to show on mobile device -->
+    <%= link_to "Sign Up", signup_path, class:"sign-btn2" %>
+  </div>
+</section>
+<!-- Courses Section -->
+<section id="courses_tools">
+  <!-- Heading -->
+  <div class="text-center">
+    <h1 class="font-bold mt-2">What you will learn</h1>
+  </div>
+  <!-- content -->
+  <div class="flex flex-col md:flex-row justify-around items-center md:mt-8">
+    <div class="p-6 m-6 md:p-2 md:m-4 md:w-550 sm:w-550 bg-courses-bg border border-gray-300 border-opacity-25 overflow-hidden shadow-lg hover:shadow-md rounded-lg">
+      <%= image_tag("Sql_data_base_with_logo.webp",alt:"", class:"h-20 w-24 mx-auto ") %>
+      <h2 class="text-center font-semibold">SQL</h2>
+      <div class="p-4 m-4">
+        <p>Lorem ipsum dolor sit amet consectetur olores</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipi</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+      </div>
+      <br>
+      <button>Learn more!</button>
+    </div>
+    <div class="p-6  m-6 md:p-2 md:m-4 md:w-550 sm:w-550 bg-courses-bg border border-gray-300 border-opacity-25 overflow-hidden shadow-md hover:shadow-lg rounded-lg">
+      <%= image_tag("python-logo-vector-1.svg", alt:"", class:"h-24 w-24 mx-auto") %>
+      <h2 class="text-center font-semibold">Python</h2>
+      <div class="p-4 m-4"">
+        <p>Lorem ipsum dolor sit amet consectetur adipisi</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisi</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisi</p>
+      </div>
+      <br>
+      <button>Learn more!</button>
+    </div>
+    <div class="p-6 m-6  md:p-2 md:m-4 md:w-550 sm:w-550 bg-courses-bg border border-gray-300 border-opacity-25 overflow-hidden shadow-md hover:shadow-lg rounded-lg">
+      <%= image_tag("r1.png",alt:"", class:"h-24 w-24 mx-auto") %>
+      <h2 class="text-center font-semibold">R</h2>
+      <div class="p-4 m-4"">
+        <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisi</p>
+      </div>
+      <br>
+      <button>Learn more!</button>
+    </div>
+  </div>
+  <div class="text-center text-blue-400 md:hidden sm:hidden">
+    <%=link_to 'And more', learn_path %>
+  </div>
+  <div class="flex flex-col md:flex-row justify-around items-center max-md:hidden ">
+    <div class="p-6 m-6 md:p-2 md:m-4 md:w-550 sm:w-550 bg-courses-bg border border-gray-300 border-opacity-25 overflow-hidden shadow-lg hover:shadow-md rounded-lg">
+      <%= image_tag("tableau1.png",alt:"", class:"h-20 w-24 mx-auto ") %>
+      <h2 class="text-center font-semibold">Tableau</h2>
+      <div class="p-4 m-4">
+        <p>Lorem ipsum dolor sit amet consectetur olores</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipi</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+      </div>
+      <br>
+      <button>Learn more!</button>
+    </div>
+    <div class="p-6  m-6 md:p-2 md:m-4 md:w-550 sm:w-550 bg-courses-bg border border-gray-300 border-opacity-25 overflow-hidden shadow-md hover:shadow-lg rounded-lg">
+      <%= image_tag("Excel.jpg", alt:"", class:"h-24 w-24 mx-auto") %>
+      <h2 class="text-center font-semibold">Excel/Spreadsheets</h2>
+      <div class="p-4 m-4"">
+        <p>Lorem ipsum dolor sit amet consectetur adipisi</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisi</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisi</p>
+      </div>
+      <br>
+      <button>Learn more!</button>
+    </div>
+    <div class="p-6 m-6  md:p-2 md:m-4 md:w-550 sm:w-550 bg-courses-bg border border-gray-300 border-opacity-25 overflow-hidden shadow-md hover:shadow-lg rounded-lg">
+      <%= image_tag("powerbi-jpg.webp",alt:"", class:"h-24 w-24 mx-auto") %>
+      <h2 class="text-center font-semibold">Power BI</h2>
+      <div class="p-4 m-4"">
+        <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisi</p>
+      </div>
+      <br>
+      <button>Learn more!</button>
+    </div>
+  </div>
+</section>
+<!-- ABOUT US SECTION -->
+<section class="mt-24 bg-about-bg">
+  <!-- Heading -->
+  <div class="text-center">
+    <br/>
+    <h1 class="font-bold">About DataSessions</h1>
+  </center>
+</div>
+<!-- Content -->
+<div class="about_us">
+  <p>
+    At DataSession, we're dedicated to fostering a vibrant community where individuals at every stage of their data journey can thrive. 
+    Whether you're a newcomer eager to break into the field or an experienced professional seeking to expand your network, we're here to support you.
+  </p>
+  <br>
+  <p>
+    Our mission is simple: to provide a platform for knowledge sharing, networking, and collaboration within the data community. 
+    From curated resources and networking opportunities to career support and project collaboration, we offer everything you need to succeed in the dynamic world of data.
+  </p>
+  <br>
+  <p>
+    Join us today and embark on a journey of continuous learning, connection, and growth. Together, let's unlock the full potential of data and drive meaningful impact in the world. 
+    Welcome to DataSession!
+  </p>
+  <br>
+</div>
+</section>
+<script src="https://kit.fontawesome.com/32f6e7a6d8.js" crossorigin="anonymous"></script>

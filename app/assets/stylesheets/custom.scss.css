@@ -1,9 +1,8 @@
 // system level; installed by rails
 
-/*
-@import "bootstrap-sprockets";
-@import "bootstrap";
-*/
+@import 'tailwind/base';
+@import 'tailwind/components';
+@import 'tailwind/utilities';
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200&family=Mukta:wght@200&family=Poppins:wght@600&display=swap');
@@ -135,7 +134,7 @@ span {
     letter-spacing: 1px;
     line-height: 1.5;
     margin-left: 12em;
-    padding-top: 7%;
+    padding-top: 2%;
 }
 
 .big-intro {
@@ -151,6 +150,9 @@ span {
     margin-bottom: 20px;
 }
 
+.btn {
+	@apply font-bold py-2 px-4 rounded;
+}
 .sign-btn {
     background-color: rgb(28, 95, 95);
     border: none;
@@ -485,15 +487,20 @@ h3 {
     }
 
     .hero-image img {
+        display:flex;
+        justify-content: center;
         width: 350px;
         height: 300px;
         
     }
     .hero-image {
+        display:flex;
+        justify-content: center;
         width: 100%;
         height: auto;
-        margin-left: 1em;
-        justify-content: center;
+        /*margin-left: 1em;*/
+        padding-top: 0%;
+        
 
     }
     .sign-btn {
