@@ -13,7 +13,7 @@ module.exports = {
 		    'custom-btn-bg': '#098087',
 		    'custom-hover' : 'rgb(235, 55, 55)',
 		    'courses-bg' : 'rgba(255, 228, 196, 0.1)',
-        'about-bg': 'rgb(240, 248, 255)',
+        	    'about-bg': 'rgb(240, 248, 255)',
 	    },
 
 	    width: {
